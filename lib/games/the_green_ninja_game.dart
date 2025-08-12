@@ -1,4 +1,6 @@
+import 'package:bonfire/bonfire.dart';
 import 'package:flutter/material.dart';
+import 'package:ninja_hijau/constants/globals.dart';
 
 class TheGreenNinjaGame extends StatefulWidget {
   const TheGreenNinjaGame({super.key});
@@ -10,6 +12,11 @@ class TheGreenNinjaGame extends StatefulWidget {
 class _TheGreenNinjaGameState extends State<TheGreenNinjaGame> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return BonfireWidget(
+      map: WorldMapByTiled(
+        WorldMapReader.fromAsset(Globals.mapOne),
+        forceTileSize: Vector2(32, 32),
+      ),
+    );
   }
 }
