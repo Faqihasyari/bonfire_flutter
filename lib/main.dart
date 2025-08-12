@@ -1,6 +1,7 @@
 import 'package:flame_audio/flame_audio.dart';
 import 'package:flutter/material.dart';
 import 'package:ninja_hijau/constants/globals.dart';
+import 'package:ninja_hijau/games/the_green_ninja_game.dart';
 import 'package:ninja_hijau/sprite_sheets/sprite_sheets.dart';
 
 void main() async {

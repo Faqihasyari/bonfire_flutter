@@ -3,6 +3,7 @@ import 'package:bonfire/bonfire.dart';
 class CollisionConfigs {
   CollisionConfigs._();
 
+  /// Collision untuk Player
   static List<ShapeHitbox> playerCollisionConfig() => [
         CircleHitbox(
           radius: 21.5,
@@ -10,6 +11,7 @@ class CollisionConfigs {
         ),
       ];
 
+  /// Collision untuk Projectile
   static List<ShapeHitbox> projectileCollisionConfig({required double width}) => [
         RectangleHitbox(
           size: Vector2.all(width / 2),
