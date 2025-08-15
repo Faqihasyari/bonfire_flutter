@@ -13,9 +13,7 @@ class _TheGreenNinjaGameState extends State<TheGreenNinjaGame> {
   @override
   Widget build(BuildContext context) {
     return BonfireWidget(
-      components: [Joystick(
-        directional: JoystickDirectional()
-      )],
+      components: [Joystick(directional: JoystickDirectional())],
       map: WorldMapByTiled(
         WorldMapReader.fromAsset(Globals.mapOne),
         forceTileSize: Vector2(32, 32),
